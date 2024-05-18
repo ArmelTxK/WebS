@@ -1,0 +1,434 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+header{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    padding: 5px;
+    height: 70px;
+    background: url("../style/background\ 1.jpg");
+    background-size: 100%;
+}
+.nav-top{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+    margin: 10px;
+}
+.nav-link{
+     
+    width: 700px;
+}
+.nav-link ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav-link-a{
+    text-decoration: none;
+    font-family: "Dm serif display";
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px;
+    transition: 0.2s;
+    color: white;
+}
+.nav-link-a:hover{
+    font-size: 23px;
+    border-bottom: 2px solid white;
+}
+#logo{
+
+    margin: 10px;
+    font-size: 25px;
+    font-family: "Josefin sans";
+    color: #F4AA32;
+
+
+}
+#log-bot{
+    color: white;
+    font-size: small;
+    position: relative;
+    left: 15px;
+    top: -5px;
+    font-size: 13px;
+    font-family: "dancing script";
+
+}
+.current{
+    border-bottom: 2px solid white;
+}
+.nav-mid-close{
+    height: 100px;
+    
+}
+.nav-close{
+    
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F4AA32;
+    color: white;
+}
+.dst-cl{
+    background-color:rgb(235, 218, 235) ;
+}
+.trad-cl{
+    background-color: rgb(235, 244, 244);
+}
+.rt-cl{
+    background-color: #ecded1;
+}
+.new-zone{
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+     
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: "Calibri";
+}
+.news-title{
+    font-weight: 800;
+}
+.search-zone{
+    margin-right: 55px;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+.fts{
+    background-color: rgb(235, 244, 244);
+    height: 620px;
+}
+.fts-dst{
+    background-color:rgb(235, 218, 235) ;
+}
+.fts-rt{
+    background-color: #ecded1;
+}
+.section-central{
+background-color: white;
+width: 1200px;
+padding: 20px;
+}
+.central-nav-top{
+    background-color: rgb(235, 244, 244);
+    padding: 10px;
+    display: flex;
+
+
+}
+.top-dst{
+    background-color:rgb(235, 218, 235) ;
+}
+.top-rt{
+    background-color: #ecded1;
+}
+.artcx{
+     
+     
+    width: 300px;
+    height: 85px;
+    display: flex;
+}
+.article-img{
+    height: auto;
+    width: 130px;
+     
+}
+.image-artc{
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    border-radius: 9px;
+}
+.article-text{
+     
+    width: 140px;
+    padding: 10px;
+}
+.central-nav-mid{
+    
+    display: flex;
+}
+.central-mid-left{
+     
+     
+    width: 25%;
+    padding: 10px;
+}
+.central-mid-mid{
+    width: 50%;
+    padding: 10px;
+}
+.central-mid-right{
+    width: 25%;
+    padding: 10px;
+}
+.artcleft{
+     
+     
+}
+.article-image{
+    background-color: grey;
+    height: 160px;
+    position: relative;
+}
+.onglet-img{
+    padding: 2px;
+    color: white;
+    background-color: rgb(174, 207, 130);
+    width: 70px;
+    position: relative;
+    left: -109px;
+    position: absolute;  
+    left: 0;   
+    top: 0;   
+    z-index: 1; 
+}
+.slt{
+    background-color: #00f1f1;
+}
+.sug{
+    background-color: #ff00dd;
+}
+.bigggg{
+    
+}
+.artcleft-bot{
+   
+    text-align: left;
+    padding: 3px;
+}
+.podzol{
+    font-family: "Britannic";
+
+}
+.time-indiq{
+    font-size: smaller;
+    font-family: "perpetua";
+    color: gray;
+    margin: 5px;
+}
+.biggst .onglet-img{
+    left: 0;  
+    top: 0;   
+    z-index: 1;   
+}
+.biggst .article-image{
+    height: 300px;
+}
+.text-artclef{
+    font-family: "georgia";
+    margin-top: 25px;
+}
+
+ 
+.link-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 800px;
+}
+.link-row li{
+    margin: 10px;
+    font-family: "Sitka";
+    /* akah j'ai pas d'idée pour la footer tu vas te battre */
+}
+/* Change cursor to pointer when hovering over articles */
+.artcx, .artcleft {
+    cursor: pointer;
+}
+
+/* Style de la fenêtre contextuelle */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    border-radius: 10px; /* Arrondir les coins */
+}
+
+.popup-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Arrondir les coins des images */
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+    min-width: 250px;
+}
+
+.footer-section h2 {
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ffa500;
+}
+
+.footer-section .socials a {
+    display: inline-block;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.footer-section .socials img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.footer-section .socials img:hover {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+}
+/* Styles par défaut */
+
+/* Media Queries pour les appareils mobiles */
+@media only screen and (max-width: 768px) {
+    /* Réorganisez les éléments pour s'adapter à des écrans plus petits */
+    .nav-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Ajustez la taille du logo pour les petits écrans */
+    #C-logo {
+        text-align: center;
+    }
+
+    /* Ajustez la taille de la police pour les petits écrans */
+    #logo {
+        font-size: 20px;
+    }
+
+    /* Ajustez la taille de la police pour les petits écrans */
+    .nav-link-a {
+        font-size: 16px;
+    }
+
+    /* Ajustez la largeur des liens de navigation */
+    .nav-link {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Ajustez la largeur des articles dans la section centrale */
+    .artcx, .artcleft {
+        width: 100%;
+    }
+
+    /* Ajustez la taille de l'image de l'article pour les petits écrans */
+    .article-img {
+        width: 100%;
+    }
+
+    /* Ajustez la taille de la police pour les petits écrans */
+    .podzol {
+        font-size: 16px;
+    }
+
+    /* Ajustez la taille de la police pour les petits écrans */
+    .time-indiq {
+        font-size: 12px;
+    }
+
+    /* Ajustez la taille de la police pour les petits écrans */
+    .text-artclef {
+        font-size: 14px;
+    }
+
+    /* Ajustez la largeur de la section centrale */
+    .section-central {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Ajustez la disposition des éléments dans la section centrale */
+    .central-nav-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Ajustez la largeur des éléments dans la section centrale */
+    .central-mid-left, .central-mid-mid, .central-mid-right {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Ajustez la taille de la police pour les petits écrans */
+    .footer-section ul li a {
+        font-size: 14px;
+    }
+}
